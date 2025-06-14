@@ -20,5 +20,7 @@
         public int Points => (Wins * 3) + Draws;
 
         public int Position { get; set; }
+
+        public int Season {  get; set; }
     }
 }

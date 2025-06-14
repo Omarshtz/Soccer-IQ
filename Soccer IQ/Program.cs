@@ -20,7 +20,10 @@ namespace Soccer_IQ
             builder.Services.AddScoped<IRepository<Club>, ClubRepository>();
             builder.Services.AddScoped<IRepository<PLayerStat>, PlayerStatRepository>();
             builder.Services.AddScoped<IRepository<LeagueStanding>, LeagueStandingRepository>();
+            builder.Services.AddHttpClient();
+            builder.Services.AddScoped<StandingsSyncService>();
             builder.Services.AddControllers();
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
