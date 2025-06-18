@@ -1,9 +1,10 @@
 ﻿namespace Soccer_IQ.Data
 {
-    using Microsoft.EntityFrameworkCore;
+    using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore;                // ← مهم
     using Soccer_IQ.Models;
 
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -13,8 +14,11 @@
         public DbSet<Player> Players { get; set; }
         public DbSet<PLayerStat> PlayerStats { get; set; }
         public DbSet<LeagueStanding> Standings { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Club>()
                 .HasMany(c => c.Players)
                 .WithOne(p => p.Club)
@@ -32,6 +36,9 @@
                 .WithMany() // لو مش هتضيف List<LeagueStanding> جوه Club
                 .HasForeignKey(ls => ls.ClubId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+
+
         }
     }
 }
