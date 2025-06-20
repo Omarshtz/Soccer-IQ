@@ -60,7 +60,7 @@ public class HomeController : ControllerBase
         {
             PlayerName = ps.Player.Name,
             Goals = ps.Goals,
-            Club = ps.Player.Club.Name,
+            team = ps.Player.Club,
             Photo = ps.Player.PhotoUrl
         })
         .ToList();
@@ -71,13 +71,13 @@ public class HomeController : ControllerBase
             null,
             tracked: false
         )
-        .OrderByDescending(ps => ps.Asissts)
+        .OrderByDescending(ps => ps.Assists)
         .Take(3)
         .Select(ps => new
         {
             PlayerName = ps.Player.Name,
-            Assists = ps.Asissts,
-            Club = ps.Player.Club.Name,
+            AAssists = ps.Assists,
+            team = ps.Player.Club,
             Photo = ps.Player.PhotoUrl
         })
         .ToList();

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Soccer_IQ.Data;
 
@@ -11,9 +12,11 @@ using Soccer_IQ.Data;
 namespace Soccer_IQ.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250619105318_fix1")]
+    partial class fix1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -299,68 +302,68 @@ namespace Soccer_IQ.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<double>("AccurateLongBalls")
-                        .HasColumnType("float");
+                    b.Property<int>("AccurateLongBalls")
+                        .HasColumnType("int");
 
-                    b.Property<double>("AerialBattlesLost")
-                        .HasColumnType("float");
+                    b.Property<int>("AerialBattlesLost")
+                        .HasColumnType("int");
 
-                    b.Property<double>("AerialBattlesWon")
-                        .HasColumnType("float");
+                    b.Property<int>("AerialBattlesWon")
+                        .HasColumnType("int");
 
-                    b.Property<double>("Assists")
-                        .HasColumnType("float");
+                    b.Property<int>("Assists")
+                        .HasColumnType("int");
 
-                    b.Property<double>("BigChancesCreated")
-                        .HasColumnType("float");
+                    b.Property<int>("BigChancesCreated")
+                        .HasColumnType("int");
 
-                    b.Property<double>("BigChancesMissed")
-                        .HasColumnType("float");
+                    b.Property<int>("BigChancesMissed")
+                        .HasColumnType("int");
 
-                    b.Property<double>("CleanSheets")
-                        .HasColumnType("float");
+                    b.Property<int>("CleanSheets")
+                        .HasColumnType("int");
 
                     b.Property<double>("CrossAccuracyPct")
                         .HasColumnType("float");
 
-                    b.Property<double>("DuelsLost")
-                        .HasColumnType("float");
+                    b.Property<int>("DuelsLost")
+                        .HasColumnType("int");
 
-                    b.Property<double>("DuelsWon")
-                        .HasColumnType("float");
+                    b.Property<int>("DuelsWon")
+                        .HasColumnType("int");
 
-                    b.Property<double>("Fouls")
-                        .HasColumnType("float");
+                    b.Property<int>("Fouls")
+                        .HasColumnType("int");
 
-                    b.Property<double>("Goals")
-                        .HasColumnType("float");
+                    b.Property<int>("Goals")
+                        .HasColumnType("int");
 
-                    b.Property<double>("GoalsConceded")
-                        .HasColumnType("float");
+                    b.Property<int>("GoalsConceded")
+                        .HasColumnType("int");
 
-                    b.Property<double>("HeadedGoals")
-                        .HasColumnType("float");
+                    b.Property<int>("HeadedGoals")
+                        .HasColumnType("int");
 
-                    b.Property<double>("Interceptions")
-                        .HasColumnType("float");
+                    b.Property<int>("Interceptions")
+                        .HasColumnType("int");
 
-                    b.Property<double>("Losses")
-                        .HasColumnType("float");
+                    b.Property<int>("Losses")
+                        .HasColumnType("int");
 
-                    b.Property<double>("Matches")
-                        .HasColumnType("float");
+                    b.Property<int>("Matches")
+                        .HasColumnType("int");
 
-                    b.Property<double>("MinutesPlayed")
-                        .HasColumnType("float");
+                    b.Property<int>("MinutesPlayed")
+                        .HasColumnType("int");
 
-                    b.Property<double>("OwnGoals")
-                        .HasColumnType("float");
+                    b.Property<int>("OwnGoals")
+                        .HasColumnType("int");
 
-                    b.Property<double>("Passes")
-                        .HasColumnType("float");
+                    b.Property<int>("Passes")
+                        .HasColumnType("int");
 
-                    b.Property<double>("PenaltiesSaved")
-                        .HasColumnType("float");
+                    b.Property<int>("PenaltiesSaved")
+                        .HasColumnType("int");
 
                     b.Property<int>("PlayerId")
                         .HasColumnType("int");
@@ -371,38 +374,39 @@ namespace Soccer_IQ.Migrations
                     b.Property<double?>("PredictedGoals")
                         .HasColumnType("float");
 
-                    b.Property<double>("Recoveries")
-                        .HasColumnType("float");
+                    b.Property<int>("Recoveries")
+                        .HasColumnType("int");
 
-                    b.Property<double>("RedCards")
-                        .HasColumnType("float");
+                    b.Property<int>("RedCards")
+                        .HasColumnType("int");
 
-                    b.Property<double>("Saves")
-                        .HasColumnType("float");
+                    b.Property<int>("Saves")
+                        .HasColumnType("int");
 
                     b.Property<double>("SavesPer90")
                         .HasColumnType("float");
 
                     b.Property<string>("Season")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("ShootingAccuracyPct")
                         .HasColumnType("float");
 
-                    b.Property<double>("Shots")
-                        .HasColumnType("float");
+                    b.Property<int>("Shots")
+                        .HasColumnType("int");
 
-                    b.Property<double>("ShotsOnTarget")
-                        .HasColumnType("float");
+                    b.Property<int>("ShotsOnTarget")
+                        .HasColumnType("int");
 
                     b.Property<double>("TackleSuccessPct")
                         .HasColumnType("float");
 
-                    b.Property<double>("Tackles")
-                        .HasColumnType("float");
+                    b.Property<int>("Tackles")
+                        .HasColumnType("int");
 
-                    b.Property<double>("Wins")
-                        .HasColumnType("float");
+                    b.Property<int>("Wins")
+                        .HasColumnType("int");
 
                     b.Property<double>("XA")
                         .HasColumnType("float");
@@ -410,8 +414,8 @@ namespace Soccer_IQ.Migrations
                     b.Property<double>("XG")
                         .HasColumnType("float");
 
-                    b.Property<double>("YellowCards")
-                        .HasColumnType("float");
+                    b.Property<int>("YellowCards")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -428,21 +432,35 @@ namespace Soccer_IQ.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Club")
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ClubId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Height")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MainPosition")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ClubId")
+                    b.Property<int>("MarketValue")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhotoUrl")
+                    b.Property<string>("OtherPosition")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Position")
+                    b.Property<string>("PhotoUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StrongFoot")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -528,9 +546,13 @@ namespace Soccer_IQ.Migrations
 
             modelBuilder.Entity("Soccer_IQ.Models.Player", b =>
                 {
-                    b.HasOne("Soccer_IQ.Models.Club", null)
+                    b.HasOne("Soccer_IQ.Models.Club", "Club")
                         .WithMany("Players")
-                        .HasForeignKey("ClubId");
+                        .HasForeignKey("ClubId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Club");
                 });
 
             modelBuilder.Entity("Soccer_IQ.Models.Club", b =>

@@ -43,7 +43,7 @@ public class PlayerStatsController : ControllerBase
         if (playerStat == null) return NotFound();
 
         playerStat.Goals = updatedPlayerStat.Goals;
-        playerStat.Asissts = updatedPlayerStat.Asissts;
+        playerStat.Assists = updatedPlayerStat.Assists;
         playerStat.MinutesPlayed = updatedPlayerStat.MinutesPlayed;
         playerStat.Matches = updatedPlayerStat.Matches;
         playerStat.Season = updatedPlayerStat.Season;

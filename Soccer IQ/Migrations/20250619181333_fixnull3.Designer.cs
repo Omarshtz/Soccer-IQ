@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Soccer_IQ.Data;
 
@@ -11,9 +12,11 @@ using Soccer_IQ.Data;
 namespace Soccer_IQ.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250619181333_fixnull3")]
+    partial class fixnull3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -362,7 +365,7 @@ namespace Soccer_IQ.Migrations
                     b.Property<double>("PenaltiesSaved")
                         .HasColumnType("float");
 
-                    b.Property<int>("PlayerId")
+                    b.Property<int?>("PlayerId")
                         .HasColumnType("int");
 
                     b.Property<double?>("PredictedAssists")
@@ -384,6 +387,7 @@ namespace Soccer_IQ.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("Season")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("ShootingAccuracyPct")
@@ -428,21 +432,35 @@ namespace Soccer_IQ.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Club")
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ClubId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Height")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MainPosition")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ClubId")
+                    b.Property<int>("MarketValue")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhotoUrl")
+                    b.Property<string>("OtherPosition")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Position")
+                    b.Property<string>("PhotoUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StrongFoot")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -520,17 +538,20 @@ namespace Soccer_IQ.Migrations
                     b.HasOne("Soccer_IQ.Models.Player", "Player")
                         .WithMany("PlayerStats")
                         .HasForeignKey("PlayerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("Player");
                 });
 
             modelBuilder.Entity("Soccer_IQ.Models.Player", b =>
                 {
-                    b.HasOne("Soccer_IQ.Models.Club", null)
+                    b.HasOne("Soccer_IQ.Models.Club", "Club")
                         .WithMany("Players")
-                        .HasForeignKey("ClubId");
+                        .HasForeignKey("ClubId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Club");
                 });
 
             modelBuilder.Entity("Soccer_IQ.Models.Club", b =>

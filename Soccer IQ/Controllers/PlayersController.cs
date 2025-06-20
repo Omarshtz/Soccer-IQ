@@ -57,13 +57,13 @@ public class PlayersController : ControllerBase
         if (player == null) return NotFound();
 
         player.Name = updatedPlayer.Name;
-        player.Height = updatedPlayer.Height;
-        player.Age = updatedPlayer.Age;
-        player.MainPosition = updatedPlayer.MainPosition;
-        player.OtherPosition = updatedPlayer.OtherPosition;
-        player.StrongFoot = updatedPlayer.StrongFoot;
-        player.MarketValue = updatedPlayer.MarketValue;
-        player.ClubId = updatedPlayer.ClubId;
+      //  player.Height = updatedPlayer.Height;
+        //player.Age = updatedPlayer.Age;
+        player.Position = updatedPlayer.Position;
+        //player.OtherPosition = updatedPlayer.OtherPosition;
+        //player.StrongFoot = updatedPlayer.StrongFoot;
+       // player.MarketValue = updatedPlayer.MarketValue;
+        //player.ClubId = updatedPlayer.ClubId;
 
         playerRepo.Edit(player);
         playerRepo.Commit();

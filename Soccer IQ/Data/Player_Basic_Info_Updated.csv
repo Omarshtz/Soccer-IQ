@@ -1,0 +1,547 @@
+Id,Name,Position,Club
+1,Folarin Balogun,FWD,Arsenal
+2,Mohamed Elneny,MID,Arsenal
+3,Kai Havertz,MID,Arsenal
+4,Jakub Kiwior,DEF,Arsenal
+5,Eddie Nketiah,FWD,Arsenal
+6,Martin Ødegaard,MID,Arsenal
+7,Martin Ødegaard,MID,Arsenal
+8,Thomas Partey,MID,Arsenal
+9,Nicolas Pépé,MID,Arsenal
+10,Nicolas Pépé,MID,Arsenal
+11,Aaron Ramsdale,GKP,Arsenal
+12,Bukayo Saka,MID,Arsenal
+13,William Saliba,DEF,Arsenal
+14,Emile Smith Rowe,MID,Arsenal
+15,Kieran Tierney,DEF,Arsenal
+16,Takehiro Tomiyasu,DEF,Arsenal
+17,Leandro Trossard,MID,Arsenal
+18,Granit Xhaka,MID,Arsenal
+19,Oleksandr Zinchenko,DEF,Arsenal
+20,Declan Rice,MID,Arsenal
+21,Reiss Nelson,MID,Arsenal
+22,Jurriën Timber,DEF,Arsenal
+23,Karl Hein,GKP,Arsenal
+24,Reuell Walters,DEF,Arsenal
+25,Bradley Ibrahim,MID,Arsenal
+26,Myles Lewis-Skelly,MID,Arsenal
+27,Leon Bailey,MID,Aston Villa
+28,Matty Cash,DEF,Aston Villa
+29,Keinan Davis,FWD,Aston Villa
+30,Leander Dendoncker,MID,Aston Villa
+31,Lucas Digne,DEF,Aston Villa
+32,Jhon Durán,FWD,Aston Villa
+33,Tim Iroegbunam,MID,Aston Villa
+34,Tim Iroegbunam,MID,Aston Villa
+35,Boubacar Kamara,MID,Aston Villa
+36,John McGinn,MID,Aston Villa
+37,Robin Olsen,GKP,Aston Villa
+38,Jacob Ramsey,MID,Aston Villa
+39,Morgan Sanson,MID,Aston Villa
+40,Viljami Sinisalo,GKP,Aston Villa
+41,Youri Tielemans,MID,Aston Villa
+42,Bertrand Traoré,MID,Aston Villa
+43,Bertrand Traoré,MID,Aston Villa
+44,Ollie Watkins,FWD,Aston Villa
+45,Pau Torres,DEF,Aston Villa
+46,Moussa Diaby,MID,Aston Villa
+47,Omari Kellyman,MID,Aston Villa
+48,Filip Marschall,GKP,Aston Villa
+49,Nicolò Zaniolo,MID,Aston Villa
+50,Oliwier Zych,GKP,Aston Villa
+51,Clément Lenglet,DEF,Aston Villa
+52,Sam Proctor,GKP,Aston Villa
+53,Tommi O'Reilly,MID,Aston Villa
+54,Jaidon Anthony,MID,Bournemouth
+55,Ryan Christie,MID,Bournemouth
+56,Siriki Dembélé,MID,Bournemouth
+57,James Hill,DEF,Bournemouth
+58,Lloyd Kelly,DEF,Bournemouth
+59,Lloyd Kelly,DEF,Bournemouth
+60,Gavin Kilkenny,MID,Bournemouth
+61,Justin Kluivert,MID,Bournemouth
+62,Jamal Lowe,MID,Bournemouth
+63,Emiliano Marcondes,MID,Bournemouth
+64,Kieffer Moore,FWD,Bournemouth
+65,Dango Ouattara,MID,Bournemouth
+66,Ben Pearson,MID,Bournemouth
+67,Joe Rothwell,MID,Bournemouth
+68,Antoine Semenyo,FWD,Bournemouth
+69,Marcos Senesi,DEF,Bournemouth
+70,Marcus Tavernier,MID,Bournemouth
+71,Mark Travers,GKP,Bournemouth
+72,Illia Zabarnyi,DEF,Bournemouth
+73,Milos Kerkez,DEF,Bournemouth
+74,Ben Greenwood,DEF,Bournemouth
+75,Max Aarons,DEF,Bournemouth
+76,Alex Scott,MID,Bournemouth
+77,Tyler Adams,MID,Bournemouth
+78,Luis Sinisterra,MID,Bournemouth
+79,Kristoffer Ajer,DEF,Brentford
+80,Ellery Balcombe,GKP,Brentford
+81,Shandon Baptiste,MID,Brentford
+82,Mads Bidstrup,MID,Brentford
+83,Mads Bidstrup,MID,Brentford
+84,Nathan Collins,DEF,Brentford
+85,Matthew Cox,GKP,Brentford
+86,Mikkel Damsgaard,MID,Brentford
+87,Josh Dasilva,MID,Brentford
+88,Mark Flekken,GKP,Brentford
+89,Mark Flekken,GKP,Brentford
+90,Charlie Goode,DEF,Brentford
+91,Rico Henry,DEF,Brentford
+92,Rico Henry,DEF,Brentford
+93,Aaron Hickey,DEF,Brentford
+94,Vitaly Janelt,MID,Brentford
+95,Mathias Jensen,MID,Brentford
+96,Keane Lewis-Potter,MID,Brentford
+97,Bryan Mbeumo,MID,Brentford
+98,Christian Nørgaard,MID,Brentford
+99,Frank Onyeka,MID,Brentford
+100,Ethan Pinnock,DEF,Brentford
+101,Kevin Schade,MID,Brentford
+102,Thomas Strakosha,GKP,Brentford
+103,Ivan Toney,FWD,Brentford
+104,Ryan Trevitt,MID,Brentford
+105,Yoane Wissa,FWD,Brentford
+106,Neal Maupay,FWD,Brentford
+107,Michael Olakigbe,MID,Brentford
+108,Ethan Brierley,MID,Brentford
+109,Saman Ghoddos,MID,Brentford
+110,Valintino Adedokun,DEF,Brentford
+111,Myles Peart-Harris,MID,Brentford
+112,Vincent Angelini,GKP,Brentford
+113,Simon Adingra,MID,Brighton
+114,Steven Alzate,MID,Brighton
+115,Yasin Ayari,MID,Brighton
+116,Facundo Buonanotte,MID,Brighton
+117,Aaron Connolly,FWD,Brighton
+118,Mahmoud Dahoud,MID,Brighton
+119,Julio Enciso,MID,Brighton
+120,Pervis Estupiñán,DEF,Brighton
+121,Evan Ferguson,FWD,Brighton
+122,Billy Gilmour,MID,Brighton
+123,Pascal Groß,MID,Brighton
+124,Adam Lallana,MID,Brighton
+125,Tariq Lamptey,DEF,Brighton
+126,Tariq Lamptey,DEF,Brighton
+127,Tom McGill,GKP,Brighton
+128,Kaoru Mitoma,MID,Brighton
+129,Jakub Moder,MID,Brighton
+130,Jakub Moder,MID,Brighton
+131,Kjell Scherpen,GKP,Brighton
+132,Kjell Scherpen,GKP,Brighton
+133,Deniz Undav,FWD,Brighton
+134,Jan Paul van Hecke,DEF,Brighton
+135,Joël Veltman,DEF,Brighton
+136,Bart Verbruggen,GKP,Brighton
+137,Andi Zeqiri,FWD,Brighton
+138,Jack Hinshelwood,MID,Brighton
+139,Carlos Baleba,MID,Brighton
+140,Benicio Baker-Boaitey,MID,Brighton
+141,Ben Jackson,DEF,Brighton
+142,Joshua Duffus,MID,Brighton
+143,Joshua Duffus,MID,Brighton
+144,Leigh Kavanagh,DEF,Brighton
+145,Luca Barrington,MID,Brighton
+146,Enock Agyei,MID,Burnley
+147,Samuel Bastien,MID,Burnley
+148,Jordan Beyer,DEF,Burnley
+149,Josh Brownhill,MID,Burnley
+150,Darko Churlinov,MID,Burnley
+151,Darko Churlinov,MID,Burnley
+152,Dara Costelloe,MID,Burnley
+153,Josh Cullen,MID,Burnley
+154,CJ Egan-Riley,DEF,Burnley
+155,Hjalmar Ekdal,DEF,Burnley
+156,Lyle Foster,FWD,Burnley
+157,Denis Franchi,GKP,Burnley
+158,Luke McNally,DEF,Burnley
+159,Arijanet Muric,GKP,Burnley
+160,Dara O'Shea,DEF,Burnley
+161,Dara O'Shea,DEF,Burnley
+162,Michael Obafemi,FWD,Burnley
+163,Bobby Thomas,DEF,Burnley
+164,Scott Twine,MID,Burnley
+165,Lawrence Vigouroux,GKP,Burnley
+166,Wout Weghorst,FWD,Burnley
+167,Anass Zaroury,MID,Burnley
+168,Sander Berge,MID,Burnley
+169,Zeki Amdouni,FWD,Burnley
+170,James Trafford,GKP,Burnley
+171,Luca Koleosho,MID,Burnley
+172,Jacob Bruun Larsen,MID,Burnley
+173,Owen Dodgson,DEF,Burnley
+174,Wilson Odobert,MID,Burnley
+175,Hannes Delcroix,DEF,Burnley
+176,Han-Noah Massengo,MID,Burnley
+177,Han-Noah Massengo,MID,Burnley
+178,Mike Trésor,MID,Burnley
+179,Robert Sánchez,GKP,Chelsea
+180,Ethan Ampadu,DEF,Chelsea
+181,Pierre-Emerick Aubameyang,FWD,Chelsea
+182,César Azpilicueta,DEF,Chelsea
+183,Benoît Badiashile,DEF,Chelsea
+184,Armando Broja,FWD,Chelsea
+185,Trevoh Chalobah,DEF,Chelsea
+186,Carney Chukwuemeka,MID,Chelsea
+187,Levi Colwill,DEF,Chelsea
+188,Enzo Fernández,MID,Chelsea
+189,David Datro Fofana,FWD,Chelsea
+190,Conor Gallagher,MID,Chelsea
+191,Malo Gusto,DEF,Chelsea
+192,Reece James,DEF,Chelsea
+193,Noni Madueke,MID,Chelsea
+194,Noni Madueke,MID,Chelsea
+195,Mykhailo Mudryk,MID,Chelsea
+196,Christopher Nkunku,FWD,Chelsea
+197,Christian Pulisic,MID,Chelsea
+198,Malang Sarr,DEF,Chelsea
+199,Raheem Sterling,MID,Chelsea
+200,Hakim Ziyech,MID,Chelsea
+201,Cole Palmer,MID,Chelsea
+202,Ian Maatsen,MID,Chelsea
+203,Axel Disasi,DEF,Chelsea
+204,Lesley Ugochukwu,MID,Chelsea
+205,Lucas Bergström,GKP,Chelsea
+206,Roméo Lavia,MID,Chelsea
+207,Bashir Humphreys,DEF,Chelsea
+208,Eddie Beach,GKP,Chelsea
+209,Djordje Petrovic,GKP,Chelsea
+210,Alfie Gilchrist,DEF,Chelsea
+211,Ronnie Stutter,FWD,Chelsea
+212,Alex Matos,MID,Chelsea
+213,Josh Brooking,DEF,Chelsea
+214,Leo Castledine,MID,Chelsea
+215,Naouirou Ahamada,MID,Crystal Palace
+216,Joachim Andersen,DEF,Crystal Palace
+217,Jordan Ayew,MID,Crystal Palace
+218,Nathaniel Clyne,DEF,Crystal Palace
+219,Cheick Doucouré,MID,Crystal Palace
+220,Malcolm Ebiowei,MID,Crystal Palace
+221,Eberechi Eze,MID,Crystal Palace
+222,Vicente Guaita,GKP,Crystal Palace
+223,Marc Guéhi,DEF,Crystal Palace
+224,Jean-Philippe Mateta,FWD,Crystal Palace
+225,Remi Matthews,GKP,Crystal Palace
+226,Remi Matthews,GKP,Crystal Palace
+227,Tyrick Mitchell,DEF,Crystal Palace
+228,Jake O'Brien,DEF,Crystal Palace
+229,Michael Olise,MID,Crystal Palace
+230,Luke Plange,FWD,Crystal Palace
+231,Jairo Riedewald,MID,Crystal Palace
+232,Joe Whitworth,GKP,Crystal Palace
+233,Dean Henderson,GKP,Crystal Palace
+234,Jesurun Rak-Sakyi,MID,Crystal Palace
+235,John-Kymani Gordon,FWD,Crystal Palace
+236,Ademola Ola-Adebomi,FWD,Crystal Palace
+237,David Ozoh,MID,Crystal Palace
+238,Jadan Raymond,MID,Crystal Palace
+239,Tayo Adaramola,DEF,Crystal Palace
+240,Jarrad Branthwaite,DEF,Everton
+241,Dele Alli,MID,Everton
+242,James Garner,MID,Everton
+243,Jean-Philippe Gbamin,MID,Everton
+244,Jean-Philippe Gbamin,MID,Everton
+245,Ben Godfrey,DEF,Everton
+246,Idrissa Gueye,MID,Everton
+247,Dwight McNeil,MID,Everton
+248,Vitalii Mykolenko,DEF,Everton
+249,Amadou Onana,MID,Everton
+250,Ellis Simms,FWD,Everton
+251,James Tarkowski,DEF,Everton
+252,Andy Lonergan,GKP,Everton
+253,Lewis Dobbin,MID,Everton
+254,Thomas Cannon,FWD,Everton
+255,Tyler Onyango,MID,Everton
+256,Mackenzie Hunt,MID,Everton
+257,Jenson Metcalfe,MID,Everton
+258,Elijah Campbell,DEF,Everton
+259,Issa Diop,DEF,Fulham
+260,Issa Diop,DEF,Fulham
+261,Tyrese Francois,MID,Fulham
+262,Anthony Knockaert,MID,Fulham
+263,Terence Kongolo,DEF,Fulham
+264,Bernd Leno,GKP,Fulham
+265,Kevin Mbabu,DEF,Fulham
+266,Kevin Mbabu,DEF,Fulham
+267,Tim Ream,DEF,Fulham
+268,Harrison Reed,MID,Fulham
+269,Antonee Robinson,DEF,Fulham
+270,Kenny Tete,DEF,Fulham
+271,Kenny Tete,DEF,Fulham
+272,Tosin Adarabioyo,DEF,Fulham
+273,Raúl Jiménez,FWD,Fulham
+274,Calvin Bassey,DEF,Fulham
+275,Luc De Fougerolles,DEF,Fulham
+276,Jay Stansfield,FWD,Fulham
+277,Matthew Dibley-Dias,MID,Fulham
+278,Luke Harris,MID,Fulham
+279,Timothy Castagne,DEF,Fulham
+280,Timothy Castagne,DEF,Fulham
+281,Steven Benda,GKP,Fulham
+282,Fodé Ballo-Touré,DEF,Fulham
+283,Devan Tanton,DEF,Fulham
+284,Trent Alexander-Arnold,DEF,Liverpool
+285,Stefan Bajcetic,MID,Liverpool
+286,Harvey Elliott,MID,Liverpool
+287,Harvey Elliott,MID,Liverpool
+288,Cody Gakpo,FWD,Liverpool
+289,Joe Gomez,DEF,Liverpool
+290,Curtis Jones,MID,Liverpool
+291,Ibrahima Konaté,DEF,Liverpool
+292,Luis Díaz,MID,Liverpool
+293,Alexis Mac Allister,MID,Liverpool
+294,Mohamed Salah,MID,Liverpool
+295,Dominik Szoboszlai,MID,Liverpool
+296,Sepp van den Berg,DEF,Liverpool
+297,Virgil van Dijk,DEF,Liverpool
+298,Jarell Quansah,DEF,Liverpool
+299,Bobby Clark,MID,Liverpool
+300,Bobby Clark,MID,Liverpool
+301,Ben Doak,MID,Liverpool
+302,James McConnell,MID,Liverpool
+303,Wataru Endo,MID,Liverpool
+304,Ryan Gravenberch,MID,Liverpool
+305,Conor Bradley,DEF,Liverpool
+306,Albert Sambi Lokonga,MID,Luton
+307,Marvelous Nakamba,MID,Luton
+308,Elijah Adebayo,FWD,Luton
+309,Amari'i Bell,DEF,Luton
+310,Luke Berry,MID,Luton
+311,Reece Burke,DEF,Luton
+312,Alfie Doughty,DEF,Luton
+313,Luke Freeman,MID,Luton
+314,John McAtee,FWD,Luton
+315,Carlton Morris,FWD,Luton
+316,Admiral Muskwe,FWD,Luton
+317,Admiral Muskwe,FWD,Luton
+318,Chiedozie Ogbene,FWD,Luton
+319,Fred Onyedinma,MID,Luton
+320,Gabriel Osho,DEF,Luton
+321,Aribim Pepple,FWD,Luton
+322,Dion Pereira,MID,Luton
+323,Dan Potts,DEF,Luton
+324,Glen Rea,MID,Luton
+325,James Shea,GKP,Luton
+326,Elliot Thorpe,MID,Luton
+327,Jack Walton,GKP,Luton
+328,Louie Watson,MID,Luton
+329,Louie Watson,MID,Luton
+330,Cauley Woodrow,FWD,Luton
+331,Teden Mengi,DEF,Luton
+332,Ryan Giles,DEF,Luton
+333,Tom Lockyer,DEF,Luton
+334,Pelly Ruddock Mpanzu,MID,Luton
+335,Pelly Ruddock Mpanzu,MID,Luton
+336,Tahith Chong,MID,Luton
+337,Issa Kaboré,DEF,Luton
+338,Thomas Kaminski,GKP,Luton
+339,Ross Barkley,MID,Luton
+340,Jacob Brown,FWD,Luton
+341,Aidan Francis-Clarke,DEF,Luton
+342,Tim Krul,GKP,Luton
+343,Jayden Luker,MID,Luton
+344,Manuel Akanji,DEF,Man City
+345,Nathan Aké,DEF,Man City
+346,Julián Álvarez,FWD,Man City
+347,Oscar Bobb,MID,Man City
+348,João Cancelo,DEF,Man City
+349,Scott Carson,GKP,Man City
+350,Scott Carson,GKP,Man City
+351,Shea Charles,MID,Man City
+352,Kevin De Bruyne,MID,Man City
+353,Phil Foden,MID,Man City
+354,Erling Haaland,FWD,Man City
+355,Aymeric Laporte,DEF,Man City
+356,Riyad Mahrez,MID,Man City
+357,Máximo Perrone,MID,Man City
+358,Máximo Perrone,MID,Man City
+359,Zack Steffen,GKP,Man City
+360,Jérémy Doku,MID,Man City
+361,Mahamadou Susoho,MID,Man City
+362,Mason Mount,MID,Man Utd
+363,Alex Telles,DEF,Man Utd
+364,Amad Diallo,MID,Man Utd
+365,Eric Bailly,DEF,Man Utd
+366,Christian Eriksen,MID,Man Utd
+367,Alejandro Garnacho,MID,Man Utd
+368,Alejandro Garnacho,MID,Man Utd
+369,Hannibal Mejbri,MID,Man Utd
+370,Victor Lindelöf,DEF,Man Utd
+371,Harry Maguire,DEF,Man Utd
+372,Kobbie Mainoo,MID,Man Utd
+373,Tyrell Malacia,DEF,Man Utd
+374,Anthony Martial,FWD,Man Utd
+375,Lisandro Martínez,DEF,Man Utd
+376,Lisandro Martínez,DEF,Man Utd
+377,Raphaël Varane,DEF,Man Utd
+378,Marcus Rashford,MID,Man Utd
+379,Jadon Sancho,MID,Man Utd
+380,Shola Shoretire,FWD,Man Utd
+381,Donny van de Beek,MID,Man Utd
+382,Aaron Wan-Bissaka,DEF,Man Utd
+383,Sergio Reguilón,DEF,Man Utd
+384,Rasmus Højlund,FWD,Man Utd
+385,Omari Forson,MID,Man Utd
+386,Radek Vítek,GKP,Man Utd
+387,Daniel Gore,MID,Man Utd
+388,Altay Bayindir,GKP,Man Utd
+389,Sofyan Amrabat,MID,Man Utd
+390,Joe Hugill,FWD,Man Utd
+391,Willy Kambwala,DEF,Man Utd
+392,Rhys Bennett,DEF,Man Utd
+393,Rhys Bennett,DEF,Man Utd
+394,Lewis Hall,DEF,Newcastle
+395,Elliot Anderson,MID,Newcastle
+396,Harrison Ashby,DEF,Newcastle
+397,Sven Botman,DEF,Newcastle
+398,Ryan Fraser,MID,Newcastle
+399,Mark Gillespie,GKP,Newcastle
+400,Alexander Isak,FWD,Newcastle
+401,Emil Krafth,DEF,Newcastle
+402,Garang Kuol,MID,Newcastle
+403,Sean Longstaff,MID,Newcastle
+404,Allan Saint-Maximin,MID,Newcastle
+405,Fabian Schär,DEF,Newcastle
+406,Sandro Tonali,MID,Newcastle
+407,Sandro Tonali,MID,Newcastle
+408,Joe Willock,MID,Newcastle
+409,Loris Karius,GKP,Newcastle
+410,Tino Livramento,DEF,Newcastle
+411,Alex Murphy,DEF,Newcastle
+412,Lewis Miley,MID,Newcastle
+413,Ben Parkinson,FWD,Newcastle
+414,Michael Ndiweni,FWD,Newcastle
+415,Michael Ndiweni,FWD,Newcastle
+416,Matt Turner,GKP,Nott'm Forest
+417,Callum Hudson-Odoi,MID,Nott'm Forest
+418,Anthony Elanga,MID,Nott'm Forest
+419,Harry Arter,MID,Nott'm Forest
+420,Taiwo Awoniyi,FWD,Nott'm Forest
+421,Giulian Biancone,DEF,Nott'm Forest
+422,Josh Bowler,MID,Nott'm Forest
+423,Mohamed Dräger,DEF,Nott'm Forest
+424,Remo Freuler,MID,Nott'm Forest
+425,Morgan Gibbs-White,MID,Nott'm Forest
+426,Ethan Horvath,GKP,Nott'm Forest
+427,Cheikhou Kouyaté,MID,Nott'm Forest
+428,Richie Laryea,DEF,Nott'm Forest
+429,Orel Mangala,MID,Nott'm Forest
+430,Loïc Mbe Soh,DEF,Nott'm Forest
+431,Alex Mighten,MID,Nott'm Forest
+432,Moussa Niakhaté,DEF,Nott'm Forest
+433,Moussa Niakhaté,DEF,Nott'm Forest
+434,Jonathan Panzo,DEF,Nott'm Forest
+435,Sam Surridge,FWD,Nott'm Forest
+436,Harry Toffolo,DEF,Nott'm Forest
+437,Joe Worrall,DEF,Nott'm Forest
+438,Joe Worrall,DEF,Nott'm Forest
+439,Ryan Yates,MID,Nott'm Forest
+440,Ryan Yates,MID,Nott'm Forest
+441,George Shelvey,GKP,Nott'm Forest
+442,George Shelvey,GKP,Nott'm Forest
+443,Josh Powell,DEF,Nott'm Forest
+444,Gonzalo Montiel,DEF,Nott'm Forest
+445,Odysseas Vlachodimos,GKP,Nott'm Forest
+446,Andrew Omobamidele,DEF,Nott'm Forest
+447,Nicolás Domínguez,MID,Nott'm Forest
+448,Nicolás Domínguez,MID,Nott'm Forest
+449,Ibrahim Sangaré,MID,Nott'm Forest
+450,Divock Origi,FWD,Nott'm Forest
+451,Auston Trusty,DEF,Sheffield Utd
+452,Auston Trusty,DEF,Sheffield Utd
+453,Cameron Archer,FWD,Sheffield Utd
+454,George Baldock,DEF,Sheffield Utd
+455,Chris Basham,DEF,Sheffield Utd
+456,Jayden Bogle,DEF,Sheffield Utd
+457,Rhian Brewster,FWD,Sheffield Utd
+458,Ismaila Coulibaly,MID,Sheffield Utd
+459,John Egan,DEF,Sheffield Utd
+460,John Fleck,MID,Sheffield Utd
+461,Wes Foderingham,GKP,Sheffield Utd
+462,Daniel Jebbison,FWD,Sheffield Utd
+463,Oliver McBurnie,FWD,Sheffield Utd
+464,Iliman Ndiaye,FWD,Sheffield Utd
+465,Rhys Norrington-Davies,DEF,Sheffield Utd
+466,Oliver Norwood,MID,Sheffield Utd
+467,Oliver Norwood,MID,Sheffield Utd
+468,Ben Osborn,MID,Sheffield Utd
+469,William Osula,FWD,Sheffield Utd
+470,Yasser Larouci,DEF,Sheffield Utd
+471,Femi Seriki,DEF,Sheffield Utd
+472,Antwoine Hackford,FWD,Sheffield Utd
+473,Gustavo Hamer,MID,Sheffield Utd
+474,Gustavo Hamer,MID,Sheffield Utd
+475,Tom Davies,MID,Sheffield Utd
+476,Ryan Oné,MID,Sheffield Utd
+477,Jili Buyabu,DEF,Sheffield Utd
+478,Sydie Peck,MID,Sheffield Utd
+479,Brandon Austin,GKP,Spurs
+480,Rodrigo Bentancur,MID,Spurs
+481,Yves Bissouma,MID,Spurs
+482,Eric Dier,DEF,Spurs
+483,Pierre-Emile Højbjerg,MID,Spurs
+484,Dejan Kulusevski,MID,Spurs
+485,Hugo Lloris,GKP,Spurs
+486,Giovani Lo Celso,MID,Spurs
+487,Pedro Porro,DEF,Spurs
+488,Joe Rodon,DEF,Spurs
+489,Cristian Romero,DEF,Spurs
+490,Oliver Skipp,MID,Spurs
+491,Djed Spence,DEF,Spurs
+492,Japhet Tanganga,DEF,Spurs
+493,Destiny Udogie,DEF,Spurs
+494,Guglielmo Vicario,GKP,Spurs
+495,Alfie Whiteman,GKP,Spurs
+496,Manor Solomon,MID,Spurs
+497,Micky van de Ven,DEF,Spurs
+498,Dane Scarlett,FWD,Spurs
+499,Alejo Véliz,FWD,Spurs
+500,Jamie Donley,FWD,Spurs
+501,Alfie Dorrington,DEF,Spurs
+502,Nayef Aguerd,DEF,West Ham
+503,Michail Antonio,FWD,West Ham
+504,Alphonse Areola,GKP,West Ham
+505,Saïd Benrahma,MID,West Ham
+506,Jarrod Bowen,MID,West Ham
+507,Maxwel Cornet,MID,West Ham
+508,Vladimír Coufal,DEF,West Ham
+509,Vladimír Coufal,DEF,West Ham
+510,Conor Coventry,MID,West Ham
+511,Flynn Downes,MID,West Ham
+512,Flynn Downes,MID,West Ham
+513,Lukasz Fabianski,GKP,West Ham
+514,Thilo Kehrer,DEF,West Ham
+515,Divin Mubama,FWD,West Ham
+516,Gianluca Scamacca,FWD,West Ham
+517,Kurt Zouma,DEF,West Ham
+518,Angelo Ogbonna,DEF,West Ham
+519,Angelo Ogbonna,DEF,West Ham
+520,Joseph Anang,GKP,West Ham
+521,Konstantinos Mavropanos,DEF,West Ham
+522,Mohammed Kudus,MID,West Ham
+523,Mohammed Kudus,MID,West Ham
+524,Tommy Doyle,MID,Wolves
+525,Tommy Doyle,MID,Wolves
+526,Rayan Aït-Nouri,DEF,Wolves
+527,Bendegúz Bolla,DEF,Wolves
+528,Luke Cundle,MID,Wolves
+529,Craig Dawson,DEF,Wolves
+530,Fábio Silva,FWD,Wolves
+531,Joe Hodge,MID,Wolves
+532,Joe Hodge,MID,Wolves
+533,Ki-Jana Hoever,DEF,Wolves
+534,Sasa Kalajdzic,FWD,Wolves
+535,Mario Lemina,MID,Wolves
+536,Pablo Sarabia,MID,Wolves
+537,Santiago Bueno,DEF,Wolves
+538,Enso González,MID,Wolves
+539,Jean-Ricner Bellegarde,MID,Wolves
+540,Jean-Ricner Bellegarde,MID,Wolves
+541,Matthew Whittingham,MID,Wolves
+542,Tawanda Chirewa,MID,Wolves
+543,Justin Hubner,DEF,Wolves
+544,Owen Hesketh,MID,Wolves
+545,Owen Hesketh,MID,Wolves
+546,Ty Barnett,MID,Wolves

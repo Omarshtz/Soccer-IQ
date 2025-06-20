@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Soccer_IQ.Repository;
 using Microsoft.AspNetCore.Identity;
+using Soccer_IQ.Services;
 
 namespace Soccer_IQ
 {
@@ -18,7 +19,7 @@ namespace Soccer_IQ
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            builder.Services.AddScoped<CsvSeeder>();
             builder.Services.AddScoped<AuthService>();
             builder.Services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
@@ -34,7 +35,9 @@ namespace Soccer_IQ
                         )
                     };
                 });
+            builder.Services.AddScoped<PlayerStatLinker>();
 
+            builder.Services.AddScoped<PlayerSeeder>();
             builder.Services.AddDbContext<AppDbContext>(
             options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddScoped<IRepository<Player>, PlayerRepository>();
@@ -45,6 +48,11 @@ namespace Soccer_IQ
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
             .AddEntityFrameworkStores<AppDbContext>()
              .AddDefaultTokenProviders();
+            builder.Services.AddHttpClient<PredictionService>(c =>
+            {
+                c.BaseAddress = new Uri("https://web-production-4057.up.railway.app/");
+            });
+            builder.Services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
 
             builder.Services.AddHttpClient();
             builder.Services.AddScoped<StandingsSyncService>();
@@ -71,6 +79,13 @@ namespace Soccer_IQ
 
 
             app.MapControllers();
+
+            using (var scopee = app.Services.CreateScope())
+            {
+                var linker = scopee.ServiceProvider.GetRequiredService<PlayerStatLinker>();
+                int updated = linker.FillPlayerIdsOffset4();
+                Console.WriteLine($"✔️  PlayerId filled for {updated} PlayerStats.");
+            }
 
 
             app.Run();

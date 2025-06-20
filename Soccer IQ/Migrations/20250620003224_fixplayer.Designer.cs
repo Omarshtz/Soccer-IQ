@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Soccer_IQ.Data;
 
@@ -11,9 +12,11 @@ using Soccer_IQ.Data;
 namespace Soccer_IQ.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250620003224_fixplayer")]
+    partial class fixplayer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -362,7 +365,7 @@ namespace Soccer_IQ.Migrations
                     b.Property<double>("PenaltiesSaved")
                         .HasColumnType("float");
 
-                    b.Property<int>("PlayerId")
+                    b.Property<int?>("PlayerId")
                         .HasColumnType("int");
 
                     b.Property<double?>("PredictedAssists")
@@ -520,8 +523,7 @@ namespace Soccer_IQ.Migrations
                     b.HasOne("Soccer_IQ.Models.Player", "Player")
                         .WithMany("PlayerStats")
                         .HasForeignKey("PlayerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Player");
                 });

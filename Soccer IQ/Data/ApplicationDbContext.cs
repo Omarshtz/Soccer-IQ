@@ -19,11 +19,11 @@
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Club>()
-                .HasMany(c => c.Players)
-                .WithOne(p => p.Club)
-                .HasForeignKey(p => p.ClubId)
-                .OnDelete(DeleteBehavior.Cascade);
+            //modelBuilder.Entity<Club>()
+            //    .HasMany(c => c.Players)
+            //    .WithOne(p => p.Club)
+            //    .HasForeignKey(p => p.ClubId)
+            //    .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Player>()
                 .HasMany(p => p.PlayerStats)
@@ -37,8 +37,12 @@
                 .HasForeignKey(ls => ls.ClubId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-
-
+            modelBuilder.Entity<PLayerStat>()
+                .HasOne(p => p.Player)
+                .WithMany(p => p.PlayerStats)
+                .HasForeignKey(p => p.PlayerId)
+                .IsRequired(true)
+                ; // أو Restrict
         }
     }
 }
