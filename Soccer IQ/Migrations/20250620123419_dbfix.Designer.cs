@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Soccer_IQ.Data;
 
@@ -11,9 +12,11 @@ using Soccer_IQ.Data;
 namespace Soccer_IQ.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250620123419_dbfix")]
+    partial class dbfix
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -432,6 +435,9 @@ namespace Soccer_IQ.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("ClubId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -444,6 +450,8 @@ namespace Soccer_IQ.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ClubId");
 
                     b.ToTable("Players");
                 });
@@ -519,6 +527,18 @@ namespace Soccer_IQ.Migrations
                         .IsRequired();
 
                     b.Navigation("Player");
+                });
+
+            modelBuilder.Entity("Soccer_IQ.Models.Player", b =>
+                {
+                    b.HasOne("Soccer_IQ.Models.Club", null)
+                        .WithMany("Players")
+                        .HasForeignKey("ClubId");
+                });
+
+            modelBuilder.Entity("Soccer_IQ.Models.Club", b =>
+                {
+                    b.Navigation("Players");
                 });
 
             modelBuilder.Entity("Soccer_IQ.Models.Player", b =>

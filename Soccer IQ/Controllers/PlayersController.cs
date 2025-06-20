@@ -1,86 +1,83 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Soccer_IQ.Models;
 using Soccer_IQ.Repository.IRepository;
-using System.Linq.Expressions;
 
-[ApiController]
-[Route("api/[controller]")]
-public class PlayersController : ControllerBase
+namespace Soccer_IQ.Controllers
 {
-    private readonly IRepository<Player> playerRepo;
-
-    public PlayersController(IRepository<Player> playerRepo)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class PlayersController : ControllerBase
     {
-        this.playerRepo = playerRepo;
-    }
+        private readonly IRepository<Player> _playerRepo;
 
-    // Get All Players
-    [HttpGet]
-    public IActionResult GetAllPlayers()
-    {
-        var players = playerRepo.GetAll(
-            new Expression<Func<Player, object>>[] { p => p.Club },
-            null,
-            tracked: false
-        );
-        return Ok(players);
-    }
+        public PlayersController(IRepository<Player> playerRepo)
+        {
+            _playerRepo = playerRepo;
+        }
 
-    // Get Player by ID
-    [HttpGet("{id}")]
-    public IActionResult GetPlayer(int id)
-    {
-        var player = playerRepo.GetOne(
-            new Expression<Func<Player, object>>[] { p => p.Club },
-            p => p.Id == id,
-            tracked: false
-        );
+        // GET: api/players
+        [HttpGet]
+        public IActionResult GetAllPlayers()
+        {
+            var players = _playerRepo.GetAll();
+            return Ok(players);
+        }
 
-        if (player == null) return NotFound();
-        return Ok(player);
-    }
+        // GET: api/players/{id}
+        [HttpGet("{id}")]
+        public IActionResult GetPlayer(int id)
+        {
+            var player = _playerRepo.GetOne(null, p => p.Id == id);
+            if (player == null) return NotFound();
+            return Ok(player);
+        }
 
-    // Create Player
-    [HttpPost]
-    public IActionResult CreatePlayer([FromBody] Player player)
-    {
-        playerRepo.Create(player);
-        playerRepo.Commit();
-        return CreatedAtAction(nameof(GetPlayer), new { id = player.Id }, player);
-    }
+        // POST: api/players
+        [HttpPost]
+        public IActionResult CreatePlayer([FromBody] Player player)
+        {
+            if (player == null) return BadRequest();
 
-    // Update Player
-    [HttpPut("{id}")]
-    public IActionResult UpdatePlayer(int id, [FromBody] Player updatedPlayer)
-    {
-        var player = playerRepo.GetOne(null, p => p.Id == id, tracked: true);
-        if (player == null) return NotFound();
+            _playerRepo.Create(player);
+            _playerRepo.Commit();
 
-        player.Name = updatedPlayer.Name;
-      //  player.Height = updatedPlayer.Height;
-        //player.Age = updatedPlayer.Age;
-        player.Position = updatedPlayer.Position;
-        //player.OtherPosition = updatedPlayer.OtherPosition;
-        //player.StrongFoot = updatedPlayer.StrongFoot;
-       // player.MarketValue = updatedPlayer.MarketValue;
-        //player.ClubId = updatedPlayer.ClubId;
+            // يعيد 201 مع Location header يشير إلى GET الخاص بالعنصر الجديد
+            return CreatedAtAction(nameof(GetPlayer), new { id = player.Id }, player);
+        }
 
-        playerRepo.Edit(player);
-        playerRepo.Commit();
+        // PUT: api/players/{id}
+        [HttpPut("{id}")]
+        public IActionResult UpdatePlayer(int id, [FromBody] Player updatedPlayer)
+        {
+            if (updatedPlayer == null || id != updatedPlayer.Id)
+                return BadRequest();
 
-        return Ok(player);
-    }
+            var existing = _playerRepo.GetOne(null, p => p.Id == id, tracked: true);
+            if (existing == null) return NotFound();
 
-    // Delete Player
-    [HttpDelete("{id}")]
-    public IActionResult DeletePlayer(int id)
-    {
-        var player = playerRepo.GetOne(null, p => p.Id == id, tracked: true);
-        if (player == null) return NotFound();
+            // عدّل الحقول المراد تحديثها
+            existing.Name = updatedPlayer.Name;
+            existing.PhotoUrl = updatedPlayer.PhotoUrl;
+            existing.Position = updatedPlayer.Position;
+            existing.Club = updatedPlayer.Club;
 
-        playerRepo.Delete(player);
-        playerRepo.Commit();
+            _playerRepo.Edit(existing);
+            _playerRepo.Commit();
 
-        return NoContent();
+            return Ok(existing);
+        }
+
+        // DELETE: api/players/{id}
+        [HttpDelete("{id}")]
+        public IActionResult DeletePlayer(int id)
+        {
+            var player = _playerRepo.GetOne(null, p => p.Id == id, tracked: true);
+            if (player == null) return NotFound();
+
+            _playerRepo.Delete(player);
+            _playerRepo.Commit();
+
+            return NoContent();
+        }
     }
 }

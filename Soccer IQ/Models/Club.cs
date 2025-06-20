@@ -7,6 +7,6 @@
         public string Country { get; set; }
         public string Logo { get; set; }
 
-        public List<Player> Players { get; set; }
+        //public List<Player> Players { get; set; }
     }
 }

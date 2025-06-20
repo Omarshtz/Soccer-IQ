@@ -1,4 +1,6 @@
-﻿namespace Soccer_IQ.Models
+﻿using System.Text.Json.Serialization;
+
+namespace Soccer_IQ.Models
 {
     public class PLayerStat
     {
@@ -65,6 +67,7 @@
 
         /* ⇢ FK */
         public int PlayerId { get; set; }
+        [JsonIgnore]
         public Player Player { get; set; }
     }
 }
